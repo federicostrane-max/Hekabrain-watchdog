@@ -1,0 +1,31 @@
+{
+  "appId": "com.hekabrain.watchdog",
+  "productName": "HekaBrain WatchDog",
+  "directories": {
+    "output": "release/watchdog-build"
+  },
+  "files": [
+    "out/**/*"
+  ],
+  "extraMetadata": {
+    "main": "out/main/index-watchdog.js"
+  },
+  "npmRebuild": false,
+  "asarUnpack": [
+    "**/node_modules/node-pty/**/*"
+  ],
+  "win": {
+    "target": [
+      {
+        "target": "portable",
+        "arch": ["x64"]
+      }
+    ],
+    "signAndEditExecutable": false,
+    "icon": "build/icon.ico"
+  },
+  "portable": {
+    "artifactName": "Hekabrain_watchdog_v3.exe"
+  },
+  "nsis": null
+}

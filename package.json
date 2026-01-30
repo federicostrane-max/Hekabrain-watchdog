@@ -1,0 +1,26 @@
+{
+  "name": "hekabrain-watchdog",
+  "version": "3.0.0",
+  "type": "module",
+  "description": "HekaBrain WatchDog - Process monitor for unstable target applications",
+  "main": "out/main/index-watchdog.js",
+  "scripts": {
+    "dev": "electron-vite dev",
+    "build": "electron-vite build",
+    "package": "electron-builder --win --config electron-builder-watchdog.json"
+  },
+  "dependencies": {
+    "@types/express": "^5.0.6"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.45",
+    "@types/react-dom": "^18.2.18",
+    "@vitejs/plugin-react": "^4.2.1",
+    "electron": "^28.1.0",
+    "electron-builder": "^24.9.1",
+    "electron-vite": "^2.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^5.3.3"
+  }
+}
