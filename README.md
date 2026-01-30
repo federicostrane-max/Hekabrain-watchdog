@@ -6,7 +6,7 @@ Process monitor for unstable target applications. Launches, monitors, and auto-r
 
 - **Process monitoring**: Track PID, uptime, memory usage, health checks
 - **Auto-restart**: Exponential backoff (1s -> 2s -> 4s -> ... -> max 30s)
-- **Crash persistence**: Crash history saved to `~/.claude-launcher/watchdog-crashes.json` (survives restarts)
+- **Crash persistence**: Crash history saved to `~/.hekabrain/watchdog-crashes.json` (survives restarts)
 - **Log aggregation**: Real-time logs from stdout/stderr and log files
 - **Health checks**: HTTP GET to configurable endpoint
 - **Dual mode**: Dev mode (electron-vite dev) or Production mode (exe)
@@ -25,7 +25,7 @@ npm run package
 
 ## Configuration
 
-Saved in `~/.claude-launcher/watchdog-config.json`:
+Saved in `~/.hekabrain/watchdog-config.json`:
 
 | Setting | Default | Description |
 |---------|---------|-------------|
@@ -37,7 +37,7 @@ Saved in `~/.claude-launcher/watchdog-config.json`:
 
 ## Crash Log
 
-Crashes are persisted to `~/.claude-launcher/watchdog-crashes.json` with:
+Crashes are persisted to `~/.hekabrain/watchdog-crashes.json` with:
 - Timestamp
 - Exit code
 - Signal

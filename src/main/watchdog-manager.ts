@@ -13,7 +13,7 @@ import {
   WatchdogLaunchMode
 } from '../shared/types'
 
-const CONFIG_DIR = join(homedir(), '.claude-launcher')
+const CONFIG_DIR = join(homedir(), '.hekabrain')
 const CONFIG_FILE = join(CONFIG_DIR, 'watchdog-config.json')
 const CRASH_LOG_FILE = join(CONFIG_DIR, 'watchdog-crashes.json')
 

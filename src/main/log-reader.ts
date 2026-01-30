@@ -5,7 +5,7 @@ import { join } from 'path'
 import { homedir } from 'os'
 import { WatchdogLogEntry } from '../shared/types'
 
-const LOG_DIR = join(homedir(), '.claude-launcher')
+const LOG_DIR = join(homedir(), '.hekabrain')
 
 interface WatchedFile {
   path: string
